@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Use generative AI to inspire new Pokemon concept ideas.">
+        <meta name="author" content="Zain Merchant">
+
+        <!-- Bootstrap + Custom CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/main.css">
+
+        <title>Pokemon GenerAI-tor</title>
+    </head>
+
+    <body>
+        <div class="row">
+            <img class="col-sm-6 title" src="../static/resources/title.png" alt="Pokemon GenerAI-tor">
+        </div>
+
+        <div class="row result">
+            <img id="pokemon-pic" src="../static/generated/0.png" alt="Generated Image">
+            <p>Possible Names: </p>
+        </div>
+
+        <div class="col-sm-4 text-input">
+            <p>Animal: </p>
+            <input type="text" name="looks_like" style="height:24px;">
+        </div>
+
+        <div class="col-sm-4 text-input">
+            <p>Habitat: </p>
+            <input type="text" name="habitat" style="height:24px;">
+        </div>
+
+        <div class="col-sm-4">
+            <p>Colors:</p>
+            <button class="color_btn" onclick="toggleColorButton(this)">black</button>
+            <button class="color_btn" onclick="toggleColorButton(this)">white</button>
+            <button class="color_btn" onclick="toggleColorButton(this)">red</button>
+            <button class="color_btn" onclick="toggleColorButton(this)">green</button>
+            <button class="color_btn" onclick="toggleColorButton(this)">yellow</button>
+            <button class="color_btn" onclick="toggleColorButton(this)">blue</button>
+            <button class="color_btn" onclick="toggleColorButton(this)">brown</button>
+            <button class="color_btn" onclick="toggleColorButton(this)">orange</button>
+            <button class="color_btn" onclick="toggleColorButton(this)">pink</button>
+            <button class="color_btn" onclick="toggleColorButton(this)">purple</button>
+            <button class="color_btn" onclick="toggleColorButton(this)">grey</button>
+        </div>
+
+        <div class="col-sm-4">
+            <p>Type:</p>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Normal</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Fire</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Water</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Grass</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Electric</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Ice</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Fighting</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Poison</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Ground</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Flying</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Psychic</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Bug</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Rock</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Ghost</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Dragon</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Dark</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Steel</button>
+            <button class="type_btn" onclick="toggleTypeButton(this)">Fairy</button>
+        </div>
+
+        <div class="col-sm-4">
+            <input type="submit" class="btn btn-success" value="Generate!">
+        </div>
+
+        <!-- Name ideas -->
+
+        <!-- Image ideas -->
+
+    </body>
+
+    <!-- Bootstrap + Custom JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/static/script.js"></script>
+</html>

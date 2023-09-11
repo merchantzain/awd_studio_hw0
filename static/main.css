@@ -1,0 +1,48 @@
+.title {
+    max-width: 50pc;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5pc;
+    padding-bottom: 2.5pc;
+}
+
+.col-sm-4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5pc;
+}
+
+.text-input {
+    display: flex; 
+    white-space: break-spaces;
+}
+
+.color_btn, .type_btn {
+    margin: 1px;
+    margin-bottom: 3px;
+}
+
+.color_btn.clicked, .type_btn.clicked {
+    background-color: #abb6c1;
+}
+
+.btn-success {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5pc;
+}
+
+.result {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+p {
+    font-weight: bold;
+}
