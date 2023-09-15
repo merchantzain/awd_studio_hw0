@@ -17,21 +17,30 @@
     <body>
         <div class="row">
             <img class="col-sm-6 title" src="../static/resources/title.png" alt="Pokemon GenerAI-tor">
+            <i style="text-align: center; padding-bottom: 2.5pc;">Generate new Pokemon inspirations!</i>
+        </div>
+
+        <div id="spinner-div" class="pt-5">
+            <div class="spinner-border text-primary" role="status"></div>
         </div>
 
         <div class="row result">
-            <img id="pokemon-pic" src="../static/generated/0.png" alt="Generated Image">
-            <p>Possible Names: </p>
+            <img id="pokemon-pic" src="" alt="Generated Image">
+        </div>
+
+        <div class="row result">
+            <ul id="names_generated" style="font-weight: normal; font-style: italic; text-align: center; list-style-type: none;"></ul>
+            <hr>
         </div>
 
         <div class="col-sm-4 text-input">
             <p>Animal: </p>
-            <input type="text" name="looks_like" style="height:24px;">
+            <input type="text" id="looks_like" style="height:24px;">
         </div>
 
         <div class="col-sm-4 text-input">
             <p>Habitat: </p>
-            <input type="text" name="habitat" style="height:24px;">
+            <input type="text" id="habitat" style="height:24px;">
         </div>
 
         <div class="col-sm-4">
@@ -72,13 +81,8 @@
         </div>
 
         <div class="col-sm-4">
-            <input type="submit" class="btn btn-success" value="Generate!">
+            <input type="submit" class="btn btn-success" value="Generate!" onclick="generateButton()">
         </div>
-
-        <!-- Name ideas -->
-
-        <!-- Image ideas -->
-
     </body>
 
     <!-- Bootstrap + Custom JavaScript -->
